@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+p{
+    font-size: 30px;
+}
+
+#bor{
+    visibility: hidden;
+}

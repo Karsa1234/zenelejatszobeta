@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css"/>
+    <title>Zenelejátszó</title>
+</head>
+<body>
+    
+<div class="topnav">
+    <a href="updates.html">Kezdőlap</a>
+    <a href="musicPicker.html">Keresés</a>
+    <a href="https://alphacademy.hu/">alphacademy</a>
+    <a href="credits.html">Készítők</a>
+    <a href="contant.html">Kapcsolat</a>
+</div>
+<div id="picker">
+<center>
+    <h2>Keress rá a zene nevekre!</h2>
+</center>
+        <form id="forms">
+            <input type="text" name="music title" placeholder="Keresés..." id="pickedSong">            
+            <input type="submit" value="Keresés">
+        </form>
+        <div id="music"></div>
+    </div>
+    <section>
+        <div id="zenék">
+            <div id="felho">
+                <h1 id="title">Cím: Felhő</h1>
+                <h2 id="title">Szerző: 30Y</h2>
+                <audio src="zenék/30Y - Felhő [Official Music Video].mp3" controls id="musictitle-felho"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="grund">
+                <h1 id="title">Cím: Mi vagyunk a grund</h1>
+                <h2 id="title">Szerző: A Pál utcai fiúk</h2>
+                <audio src="zenék/A Pál utcai fiúk - Mi vagyunk a Grund - hivatalos videoklip.mp3" controls id="musictitle-grund"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="szolosbe">
+                <h1 id="title">Cím: Szőlősbe</h1>
+                <h2 id="title">Szerző: Horváth Tamás</h2>
+                <audio src="zenék/A SZŐLŐSBE - HORVÁTH TAMÁS (OFFICIAL MUSIC VIDEO).mp3" controls id="musictitle-szolosbe"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="robinson">
+                <h1 id="title">Cím: Robinson</h1>
+                <h2 id="title">Szerző: Ámokfutók</h2>
+                <audio src="zenék/Ámokfutók - Robinson.mp3" controls id="musictitle-robinson"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="marti">
+                <h1 id="title">Cím: Márti dala</h1>
+                <h2 id="title">Szerző: Kiss Tibi</h2>
+                <audio src="zenék/Anna and the Barbies feat. Kiss Tibi_ Márti dala (official video) FULL HD.mp3" controls id="musictitle-marti"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="kapu">
+                <h1 id="title">Cím: Kapu</h1>
+                <h2 id="title">Szerző: Azahriah</h2>
+                <audio src="zenék/Azahriah - kapu.mp3" controls id="musictitle-kapu"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="o">
+                <h1 id="title">Cím: Olyan ő</h1>
+                <h2 id="title">Szerző: Bagossy Brothers Company</h2>
+                <audio src="zenék/Bagossy Brothers Company  - Olyan Ő (Official Video).mp3" controls id="musictitle-o"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="jovok">
+                <h1 id="title">Cím: Visszajövök</h1>
+                <h2 id="title">Szerző: Bagossy Brothers Company</h2>
+                <audio src="zenék/Bagossy Brothers Company  - Visszajövök (Official Video).mp3" controls id="musictitle-jovok"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="napok">
+                <h1 id="title">Cím: Azok a boldog szép napok</h1>
+                <h2 id="title">Szerző: Beatrice</h2>  
+                <audio src="zenék/Beatrice - Azok a boldog szép napok.mp3" controls id="musictitle-napok"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="kerek">
+                <h1 id="title">Cím: Kerek egész</h1>
+                <h2 id="title">Szerző: Bereczki Zoltán</h2>
+                <audio src="zenék/Bereczki Zoltán - Kerek egész.mp3" controls id="musictitle-kerek"></audio>
+                <button src="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="lehetsz">
+                <h1 id="title">Cím: Lehetsz király</h1>
+                <h2 id="title">Szerző: Bereczki Zoltán & Szinetár Dóra</h2>
+                <audio src="zenék/Bereczki Zoltán & Szinetár Dóra - Lehetsz király.mp3" controls id="musictitle-lehetsz"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="boros">
+                <h1 id="title">Cím: Mesélek a bornak</h1>
+                <h2 id="title">Szerző: 4S Street</h2>
+                <audio src="zenék/boros.mp3" controls id="musictitle-boros"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="minden">
+                <h1 id="title">Cím: Minden rendben</h1>
+                <h2 id="title">Szerző: Hősök</h2>
+                <audio src="zenék/Compact Disco feat. Hősök - Minden rendben (Official Music Video).mp3" controls id="musictitle-minden"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="tevagy">
+                <h1 id="title">Cím: Te vagy a jel</h1>
+                <h2 id="title">Szerző: Crystal</h2>
+                <audio src="zenék/Crystal - Te vagy a jel (Official Music Video).mp3" controls id="musictitle-tevagy"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="kezenfogsz">
+                <h1 id="title">Cím: Te majd kézenfogsz</h1>
+                <h2 id="title">Szerző: Csík Zenekar</h2>
+                <audio src="zenék/Csik Zenekar - Te majd kezenfogsz es hazavezetsz [OFFICIAL].mp3" controls id="musictitle-kezenfogsz"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="lehetne">
+                <h1 id="title">Cím: Lehetne újra február</h1>
+                <h2 id="title">Szerző: Curtis</h2>
+                <audio src="zenék/Curtis - Lehetne újra február (Official Music Video).mp3" controls id="musictitle-lehetne"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="balladaja">
+                <h1 id="title">Cím: A Felszarvazottak Balladája</h1>
+                <h2 id="title">Szerző: Deák Bill Gyula</h2>
+                <audio src="zenék/Deák Bill Gyula- A Felszarvazottak Balladája.mp3" controls id="musictitle-balladaja"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="nelkuled">
+                <h1 id="title">Cím: Hogyan tudnék élni nélküled</h1>
+                <h2 id="title">Szerző: Demjén Ferenc</h2>
+                <audio src="zenék/Demjén Ferenc - Hogyan tudnék élni nélküled (Official Audio).mp3" controls id="musictitle-nelkuled"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="tinedzser">
+                <h1 id="title">Cím: Tinédzser dal</h1>
+                <h2 id="title">Szerző: Dinamit</h2>
+                <audio src="zenék/Dinamit - Tinédzser dal.mp3" controls id="musictitle-tinedzser"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="lany">
+                <h1 id="title">Cím: Hol van az a lány</h1>
+                <h2 id="title">Szerző: Hallott Pénz</h2>
+                <audio src="zenék/DR BRS X Fekete Vonat feat. Halott Pénz - Hol van az a lány (Official Music Video).mp3" controls id="musictitle-lany"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="pofonofon">
+                <h1 id="title">Cím: Beindul a pofonofon</h1>
+                <h2 id="title">Szerző: Dzsungel Könyve</h2>
+                <audio src="zenék/Dzsungel Könyve - 03 - Beindul a pofonofon (Dés-Geszti).mp3" controls id="musictitle-pofonofon"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="vilag">
+                <h1 id="title">Cím: Álmodtam egy világot</h1>
+                <h2 id="title">Szerző: Edda</h2>
+                <audio src="zenék/Edda - Álmodtam egy világot.mp3" controls id="musictitle-vilag"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="voltam">
+                <h1 id="title">Cím: Kölyköd voltam</h1>
+                <h2 id="title">Szerző: Edda</h2>
+                <audio src="zenék/EDDA művek - Kölyköd voltam.mp3" controls id="musictitle-voltam"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="kozepen">
+                <h1 id="title">Cím: A kör közepén</h1>
+                <h2 id="title">Szerző: Edda</h2>
+                <audio src="zenék/Edda_A kor kozepen.mp3" controls id="musictitle-kozepen"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="vallomas">
+                <h1 id="title">Cím: Angyali Vallomás</h1>
+                <h2 id="title">Szerző: Első Emelet</h2>
+                <audio src="zenék/Első Emelet - Angyali Vallomás.mp3" controls id="musictitle-vallomas"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="szaz">
+                <h1 id="title">Cím: Száz út</h1>
+                <h2 id="title">Szerző: Emberek</h2>
+                <audio src="zenék/Emberek - Száz út.mp3" controls id="musictitle-szaz"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="szonyeg">
+                <h1 id="title">Cím: Csavard fel a szőnyeget</h1>
+                <h2 id="title">Szerző: Fenyő Miklós</h2>
+                <audio src="zenék/Fenyő Miklós Csavard fel a szőnyeget.mp3" controls id="musictitle-szonyeg"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="seholse">
+                <h1 id="title">Cím: Seholse</h1>
+                <h2 id="title">Szerző: filo x apu</h2>
+                <audio src="zenék/filo x apu - seholse.mp3" controls id="musictitle-seholse"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="mizu">
+                <h1 id="title">Cím: Mizu</h1>
+                <h2 id="title">Szerző: FLUOR</h2>
+                <audio src="zenék/FLUOR  MIZU  OFFICIAL MUSIC VIDEO.mp3" controls id="musictitle-mizu"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="mondta">
+                <h1 id="title">Cím: Anyám mondta</h1>
+                <h2 id="title">Szerző: Follow The Flow</h2>
+                <audio src="zenék/Follow The Flow - Anyám mondta [OFFICIAL MUSIC VIDEO].mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="senki">
+                <h1 id="title">Cím: Nem tudja senki</h1>
+                <h2 id="title">Szerző: Follow The Flow</h2>
+                <audio src="zenék/Follow The Flow - Nem tudja senki [OFFICIAL MUSIC VIDEO].mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="volna">
+                <h1 id="title">Cím: Élnünk kellett volna</h1>
+                <h2 id="title">Szerző: Hallott Pénz</h2>
+                <audio src="zenék/Halott Pénz - Élnünk kellett volna (feat Agebeat&Kovary).mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="biciklim">
+                <h1 id="title">Cím: Ellopták a biciklim</h1>
+                <h2 id="title">Szerző: Ham Ko Ham</h2>
+                <audio src="zenék/Ham Ko Ham  Ellopták a biciklim.mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="asszony">
+                <h1 id="title">Cím: Hosszúlábú asszony</h1>
+                <h2 id="title">Szerző: Hobo Blues Band</h2>
+                <audio src="zenék/Hobo Blues Band -Hosszúlábú asszony.mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="kiralylany">
+                <h1 id="title">Cím: Királylány</h1>
+                <h2 id="title">Szerző: Hooligans</h2>
+                <audio src="zenék/Hooligans - Királylány (Official).mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="meggyfa">
+                <h1 id="title">Cím: Meggyfa</h1>
+                <h2 id="title">Szerző: Horváth Tamás</h2>
+                <audio src="zenék/Horváth Tamás_ Meggyfa (A Dal 2018 - Döntő).mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+            <div id="csokkiraly">
+                <h1 id="title">Cím: Csókkirály</h1>
+                <h2 id="title">Szerző: Hungária</h2>
+                <audio src="zenék/Hungária - Csókkirály.mp3" controls id="musictitle-mondta"></audio>
+                <button id="Vissza" onclick="back()">Vissza</button>
+            </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
